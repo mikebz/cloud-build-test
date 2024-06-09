@@ -5,10 +5,10 @@ metadata:
   namespace: ns1
   labels:
     app: webserver
-    version: v1
+    version: v2
 spec:
   containers:
-  - name: webserver  # The name that this container will have.
-    image: nginx:latest # The image on which it is based.
-    ports:               # The port(s) that will be open.
+  - name: webserver
+    image: nginx:1.27
+    ports:
     - containerPort: 80
